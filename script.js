@@ -41,7 +41,6 @@ const people = [
 // const oldToYoung = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
 // console.table(oldToYoung);
 
-
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
 // let initialValue = 0;
@@ -49,15 +48,50 @@ const people = [
 // console.log(all);
 
 // 5. Sort the inventors by years lived
-const yearsLived = inventors.sort((a, b) => (a.passed - a.year) > (b.passed - b.year) ? 1 : -1)
-console.table(yearsLived);
+// const yearsLived = inventors.sort((a, b) => (a.passed - a.year) > (b.passed - b.year) ? 1 : -1)
+// console.table(yearsLived);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+// const category = document.querySelector('.mw-category');
+// const links = Array.from(category.querySelectorAll('a'));
+// const de = links
+// 						.map(link => link.textContent)
+// 						.filter(streetName => streetName.includes('de'));
+// const links = category.querySelectorAll('a');
+// const links = [...category.querySelectorAll('a')];
+
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+// const lastName = people.sort();
+// console.log(lastName);
+
+// const alpha = people.sort(function (lastOne, nextOne) {
+// 	const [aLast, aFirst] = lastOne.split(', ');
+// 	const [bLast, bFirst] = nextOne.split(', ');
+// 	return aLast > bLast ? 1 : -1;
+// })
+// console.log(alpha);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
-const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+// const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+
+// const transport = data.reduce(function (obj, item) {
+// 	if (!obj[item]) {
+// 		obj[item] = 0;
+// 	}
+// 	obj[item]++;
+// 	return obj;
+// }, {});
+
+// const transport = data.reduce((obj, item) => {
+// 	if (!obj[item]) {
+// 		obj[item] = 0;
+// 	}
+// 	obj[item]++
+// 	return obj;
+// }, {});
+
+// console.log(transport);
